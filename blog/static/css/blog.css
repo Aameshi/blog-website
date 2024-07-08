@@ -1,18 +1,18 @@
-/* h1 a, h2 a {
-    color: #C25100;
-    font-family: 'Lobster';
+::selection {
+    background: #5f7059; /* bg color of selection */
+    color: white; /* text color of selection */
 }
 
-body {
-    padding-left: 15px;
-} */
-
 .page-header {
-    background-color: #C25100;
+    background-color: #2a3d23;
     margin-top: 0;
     margin-bottom: 40px;
     padding: 20px 20px 20px 40px;
     height : 150px;
+}
+
+body{
+    background-color : #cce8c2;
 }
 
 .page-header h1,
@@ -20,71 +20,251 @@ body {
 .page-header h1 a:visited,
 .page-header h1 a:active {
     padding-top : 20px;
-    color: #ffffff;
+    color: white;
     font-size: 36pt;
     text-decoration: none;
 }
 
-h1,
-h2,
-h3,
-h4 {
+.page-header h1 a:hover {
+    color : #cce8c2;
+}
+
+h1 {
     font-family: 'Lobster', cursive;
 }
 
 .date {
-    color: 'turquoise';
-}
-
-.save {
-    float: right;
-}
-
-.post-form textarea,
-.post-form input {
-    width: 100%;
+    color: #2a3d23;
+    font-weight : bold;
 }
 
 .top-menu,
 .top-menu:visited {
-    color: #ffffff;
+    color: white;
     float: right;
     font-size: 15pt;
     margin-right: 20px;
     text-decoration : none;
     padding-top : 35px;
+    transition: transform 0.3s ease;
 }
 
-.top-menu small:hover {
-    color: #ffffff;
-    float: right;
-    font-size: 25pt;
-    margin-right: 20px;
-    padding : 35px;
+.top-menu:hover {
+    color: #cce8c2;
+    padding-top : 30px;
+    transform: scale(1.5);
+    transform-origin: center;
+}
+
+.space{
+    padding-left : 20px;
 }
 
 .post {
     margin-bottom: 70px;
+    margin-left : 40px;
+    color : #2a3d23;
+    text-align : justify;
+}
+
+.post p {
+    font-family : 'courier', courier, monospace;
+    font-weight : bold;
 }
 
 .post h2 a,
 .post h2 a:visited {
-    color: #000000;
+    color: #2a3d23;
+    text-decoration : none;
+    text-transform : uppercase;
+    position : relative;
+    transition: color 0.3s ease;
+}
+
+.post h2 a::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #2a3d23;
+    transition: width 0.3s ease;
+}
+
+.post h2 a:hover::before{
+    width : 100%;
 }
 
 .post > .date,
 .post > .actions {
     float: right;
+    padding-left: 20px;
 }
 
-.btn-secondary,
-.btn-secondary:visited {
-    color: #C25100;
-    background: none;
-    border-color: #C25100;
+.post-form {
+    padding-left: 5%;
+    padding-right: 0%;
+    padding-top: 10px;
 }
 
-.btn-secondary:hover {
-    color: #FFFFFF;
-    background-color: #C25100;
+.post-form label {
+    color: #2a3d23;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.post-form textarea,
+.post-form input {
+    width: 150%;
+    background-color: white;
+    border: 1px solid #2a3d23;
+    border-radius: 5px;
+}
+
+.post-form textarea:hover,
+.post-form input:hover {
+    background-color: rgb(232, 239, 226);
+}
+
+.post-form button {
+    padding: 2px 80px;
+    margin-left: 500px;
+    margin-bottom: 100px;
+    background-color: white;
+    border: 1px solid #2a3d23;
+    border-radius: 5px;
+    color: #2a3d23;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.post-form button:hover {
+    background-color: #2a3d23;
+    color: white;
+}
+
+.post-form button:active {
+    color: #cce8c2;
+}
+
+.edit-button {
+    color: #2a3d23;
+}
+
+.edit-button:hover {
+    color: #5f7059;
+}
+
+.login-form {
+    padding-left: 57%;
+    padding-right: 50%;
+    padding-top: 10%;
+}
+
+.login-form label {
+    color: #2a3d23;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    border: 1px solid #2a3d23;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+.login-form input[type="text"]:hover,
+.login-form input[type="password"]:hover {
+    background-color: rgb(232, 239, 226);
+}
+
+.login-form input[type="submit"] {
+    padding: 2px 80px;
+    margin-left: 50px;
+    background-color: white;
+    border: 1px solid #2a3d23;
+    border-radius: 5px;
+    color: #2a3d23;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.login-form input[type="submit"]:hover {
+    background-color: #2a3d23;
+    color: white;
+}
+
+.login-form input[type="submit"]:active {
+    color: #cce8c2;
+}
+
+.signup-form {
+    padding-left: 40%;
+    padding-top: 5%;
+    margin-left: 75px;
+}
+
+.signup-form label {
+    color: #2a3d23;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.signup-form input[type="text"],
+.signup-form #id_password1 {
+    border: 1px solid #2a3d23;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-left: 131.5px;
+}
+
+.signup-form input[type='email'] {
+    border: 1px solid #2a3d23;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-left: 148px;
+}
+
+.signup-form #id_password2 {
+    border: 1px solid #2a3d23;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-left: 20px;
+}
+.signup-form input[type="text"]:hover,
+.signup-form input[type='email']:hover,
+.signup-form input[type="password"]:hover {
+    background-color: rgb(232, 239, 226);
+}
+
+.signup-form button {
+    padding: 2px 80px;
+    margin-left: 100px;
+    background-color: white;
+    border: 1px solid #2a3d23;
+    border-radius: 5px;
+    color: #2a3d23;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.signup-form button:hover {
+    background-color: #2a3d23;
+    color: white;
+}
+
+.signup-form button:active {
+    color: #cce8c2;
 }

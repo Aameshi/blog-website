@@ -1,10 +1,42 @@
 {% extends "blog/base.html" %}
 
 {% block content %}
-  <h2>Sign Up</h2>
-  <form method="post" action="{% url 'signup' %}">
+  <!-- <form method="post" action="{% url 'signup' %}" class="signup-form">
     {% csrf_token %}
     {{ form.as_p }}
     <button type="submit">Sign Up</button>
+  </form> -->
+
+  <form method="post" action="{% url 'signup' %}" class="signup-form">
+    {% csrf_token %}
+    <div>
+      <label for="id_username">{{ form.username.label_tag }}</label>
+      <span title='Username can only contain letters, digits and some special characters (@, /, ., /, +, /, -, /, _) and must not be more than 150 characters.'>{{ form.username }}</span>
+    </div>
+
+    <br>
+
+    <div>
+      <label for="id_mail">EMAIL ID:</label>
+      <span title='Enter a valid email ID.'>{{ form.email }}</span>
+    </div>
+
+    <br>
+
+    <div>
+      <label for="id_password1">{{ form.password1.label_tag }}</label>
+      <span title='Password must contain at least 8 characters, not entirely numeric. Password must not be too similar to other personal information or a commonly used password.'>{{ form.password1 }}</span>
+    </div>
+    
+    <br>
+    
+    <div>
+      <label for="id_password2">{{ form.password2.label_tag }}</label>
+      <span title='Re-enter the password for verification.'>{{ form.password2 }}</span>
+    </div>
+    
+    <br>
+    
+    <button type="submit">SIGNUP</button>
   </form>
 {% endblock %}
