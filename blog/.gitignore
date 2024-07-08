@@ -8,11 +8,11 @@ __pycache__
 myvenv/
 venv/
 
-# Database
-db.sqlite3
+# # Database
+# db.sqlite3
 
-# Static folder at project root
-/static/
+# # Static folder at project root
+# /static/
 
 # Windows
 Thumbs.db*
