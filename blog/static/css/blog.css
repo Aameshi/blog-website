@@ -162,7 +162,7 @@ h1 {
 .login-form {
     padding-left: 57%;
     padding-right: 50%;
-    padding-top: 10%;
+    padding-top: 5%;
 }
 
 .login-form label {
@@ -241,6 +241,7 @@ h1 {
     font-size: 16px;
     margin-left: 20px;
 }
+
 .signup-form input[type="text"]:hover,
 .signup-form input[type='email']:hover,
 .signup-form input[type="password"]:hover {
@@ -267,4 +268,81 @@ h1 {
 
 .signup-form button:active {
     color: #cce8c2;
+}
+
+.forgot-button {
+    padding: 2px 40px;
+    margin-left: 510px;
+    background-color: white;
+    border: 1px solid #2a3d23;
+    border-radius: 5px;
+    color: #2a3d23;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.forgot-button:hover {
+    background-color: #2a3d23;
+    color: white;
+}
+
+.forgot-button:active {
+    color: #cce8c2;
+}
+
+.forgot-form {
+    padding-left: 50%;
+    padding-top: 10%;
+}
+
+.forgot-form label {
+    margin-left: 75px;
+    color: #2a3d23;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.forgot-form input[type='email'] {
+    border: 1px solid #2a3d23;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+.forgot-form input[type='email']:hover {
+    background-color: rgb(232, 239, 226);
+}
+
+.forgot-form button {
+    padding: 2px 20px;
+    margin-left: 80px;
+    background-color: white;
+    border: 1px solid #2a3d23;
+    border-radius: 5px;
+    color: #2a3d23;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.forgot-form button:hover {
+    background-color: #2a3d23;
+    color: white;
+}
+
+.forgot-form button:active {
+    color: #cce8c2;
+}
+
+.alert {
+    width: 100%;
+    color: #dc9794;
+    text-align: center;
+    font-weight: bold;   
+    margin-left: 50px;
+    padding-left: 40%;
 }

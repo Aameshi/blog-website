@@ -26,5 +26,7 @@
 
         <input type="submit" value="login"/>
         <input type="hidden" name="next" value="{{ next }}" />
+        <p></p>
     </form>
+    <a href="{% url 'forgot_password' %}"><button class="forgot-button">Forgot Password ?</button></a>
 {% endblock %}
