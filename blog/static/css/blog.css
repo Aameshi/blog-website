@@ -13,6 +13,8 @@
 
 body{
     background-color : #cce8c2;
+    margin: 0;
+    overflow-x: hidden;
 }
 
 .page-header h1,
