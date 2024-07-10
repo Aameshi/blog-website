@@ -93,7 +93,7 @@ def forgot_password(request):
             else:
                 messages.error(request, 'Email not registered.')
                 return redirect('forgot_password')
-            return redirect('login')
+            # return redirect('login')
     else:
         form = ForgotPasswordForm()
     return render(request, 'blog/forgot_password.html', {'form': form})

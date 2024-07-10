@@ -51,9 +51,22 @@ h1 {
 
 .top-menu:hover {
     color: #cce8c2;
-    padding-top : 30px;
+    padding-top : 27px;
     transform: scale(1.5);
     transform-origin: center;
+}
+
+.top-menu button,
+.top-menu button:visited {
+    color: white;
+    background-color: #2a3d23;
+    border: none;
+}
+
+.top-menu button:hover {
+    background-color: #2a3d23;
+    color: #cce8c2;
+    transform: scale(1.04);
 }
 
 .space{
@@ -345,4 +358,38 @@ h1 {
     font-weight: bold;   
     margin-left: 50px;
     padding-left: 40%;
+}
+
+.login-back {
+    width: 100%;
+    color: #2a3d23;
+    text-align: center;
+    font-weight: bold;   
+    margin-left: 50px;
+    padding-left: 40%;
+}
+
+.login-back a,
+.login-back a:visited {
+    color: #2a3d23;
+    text-decoration : none;
+    text-transform : uppercase;
+    position : relative;
+    transition: color 0.3s ease;
+    margin-top: 0;
+}
+
+.login-back a::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #2a3d23;
+    transition: width 0.3s ease;
+}
+
+.login-back a:hover::before{
+    width : 100%;
 }

@@ -12,7 +12,11 @@
     <body>
         <div class="page-header">
             {% if user.is_authenticated %}
-                <a href="{% url 'logout' %}" class="top-menu"><small>LOGOUT</small></a>
+                <form action="{% url 'logout' %}" method="post" class="top-menu">
+                    {% csrf_token %}
+                    <button type="submit"><small>LOGOUT</small></button>
+                </form>
+                <!-- <a href="{% url 'logout' %}" class="top-menu"><small>LOGOUT</small></a> -->
                 <!-- <span class="top-menu"><p>Hello {{ user.username }}</p></span> -->
                 <a href="{% url 'post_new' %}" class="top-menu"><small>{% include './icons/person-badge-fill.svg' %}</small></a>
                 <a href="{% url 'post_new' %}" class="top-menu"><small>{% include './icons/plus-square-fill.svg' %}</small></a>

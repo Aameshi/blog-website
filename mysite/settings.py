@@ -133,9 +133,14 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 LOGIN_REDIRECT_URL = '/'
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'aameshisblog@gmail.com'
-EMAIL_HOST_PASSWORD = 'mymailpassword'  # not secure, so .env must be used in general
-DEFAULT_FROM_EMAIL = 'aameshisblog@gmail.com'
+# EMAIL_HOST = 'smtp.gmail.com'
+# EMAIL_PORT = 587
+# EMAIL_USE_TLS = True
+# EMAIL_HOST_USER = 'aameshigodara05@gmail.com'
+# EMAIL_HOST_PASSWORD = 'importantworkonly'  # not secure, so .env must be used in general
+# DEFAULT_FROM_EMAIL = 'aameshigodara05@gmail.com'
+
+EMAIL_HOST = 'sandbox.smtp.mailtrap.io'
+EMAIL_PORT = '2525'
+EMAIL_HOST_USER = 'a5d868b63e285c'
+EMAIL_HOST_PASSWORD = 'c2d8fce7c5ab54'
